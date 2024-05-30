@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  <title> Payment Page </title>
+
+  <link rel="stylesheet" href="paymentstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+  </head>
+	<body>
+
+                    <!------Header starts------>
+<div class="header">
+
+  <div class="logo">
+      <img src="../images/logo.jpg">
+  </div>
+  <div class="socielicons">
+    <a href="https://www.facebook.com"><img src="../images/sociel/Facebookbw.png" onmouseover="this.src='../images/sociel/Facebook.png'" onmouseout="this.src='../images/sociel/Facebookbw.png'"></a>
+    <a href="https://www.instagram.com"><img src="../images/sociel/Instagrambw.png" onmouseover="this.src='../images/sociel/Instagram.png'" onmouseout="this.src='../images/sociel/instagrambw.png'"></a>
+    <a href="https://www.twitter.com"><img src="../images/sociel/Twitterbw.png" onmouseover="this.src='../images/sociel/Twitter.png'" onmouseout="this.src='../images/sociel/Twitterbw.png'"></a>
+    <a href="https://www.whatsapp.com"><img src="../images/sociel/WhatsAppbw.png" onmouseover="this.src='../images/sociel/WhatsApp.png'" onmouseout="this.src='../images/sociel/WhatsAppbw.png'"></a>
+    <a href="https://www.google.com"> <img src="../images/sociel/Googlebw.png" onmouseover="this.src='../images/sociel/Google.png'" onmouseout="this.src='../images/sociel/googlebw.png'"></a>
+     <a href="https://www.youtube.com"><img src="../images/sociel/Youtubebw.png" onmouseover="this.src='../images/sociel/Youtube.png'" onmouseout="this.src='../images/sociel/Youtubebw.png'"></a>
+  </div>
+
+  <a href="../folder_1/Login.html">
+      <button class="regbtn">
+          <span>Login/register</span> 
+      </button>
+  </a>  
+
+  
+</div>
+              <!------Header ends------>
+                  <!------navigation bar starts------>
+<div class="nav">
+  <ul>
+    <li>
+      <a href="../folder_2/home.html">Home</a>
+  </li>
+  <li>
+      <a href="../folder_4/popular packages.html">Popular packages</a>
+  </li>
+  <li>
+      <a href="../folder_4/gallery.html">Gallery</a>
+  </li>
+  <li>
+      <a href="../folder_2/about.html">About</a>
+  </li>
+  <li>
+      <a href="../folder_3/contact us.html">Contact Us</a>
+  </li>
+  
+  </ul>
+  </div>
+                  <!------navigation bar ends------>
+  
+	
+	<button class="button" onclick="location.href='../folder_4/popular packages.html'" > < back to tour details</button>
+  
+  
+
+	<p> <h2 style=color:rgb(220,235,17)> Payment: </h2></p>
+    <hr style="height:4px;border-width:0;color:gray;background-color:gray">
+	
+	<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+
+            <h3>Billing Address</h3>
+
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Kamal Perera" required >
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="email" id="email" name="email" placeholder="kamalperera@gmail.com" required >
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="33 Church Road, Malabe">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Malabe">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="province">Province</label>
+                <input type="text" id="province" name="province" placeholder="WP">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10115">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+
+            <h3>Payment</h3>
+
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:rgb(30,30,243);"></i>
+              <i class="fa fa-cc-amex" style="color:rgb(107,107,231);"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Kamal Perera" required >
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required >
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="October" required >
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2023" required >
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" required >
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Send a confirmation receipt to my email
+        </label>
+      
+      <button type="submit" class="paybutton" onclick="location.href='pConfirm.html'" > Proceed to Checkout </button>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="col-25">
+    <div class="container">
+
+      <h4>Tour Fee
+        
+        <span class="price" style="color:rgb(186, 216, 15)">
+          <i class="fa fa-shopping-cart"></i>
+          <b>4</b>
+        </span>
+      </h4>
+      <p>Accommodation and Foods <span class="price">$350</span></p>
+      <p>Transport <span class="price">$150</span></p>
+      <p>Tour Guide <span class="price">$50</span></p>
+      <p>Tickets <span class="price">$50</span></p>
+      <hr>
+      <p>Total Fee <span class="price" style="color:yellow"><b>$600</b></span></p>
+    </div>
+  </div>
+</div>
+                        <!--Got the ideas from : www.w3schools.com -->
+
+<!--footer starts-->
+<footer>
+  <div class="footercontainer">
+      <div class="footerinfo">
+      <form>
+          <fieldset>
+              <legend>About</legend>
+              <div class="abouttxt">
+              <p>
+                 Our website design to help clients for make their dreams come true and paln a wel organized tour in sri lanka.Our service offers so meny travel packages based on likeness of your mind.Those palns include various traportations methods, checkout hotels and restuarnts.we have excellent guides with the highest rating there to make your journey perfect and safe. we will assure you will have a greate time in sri lanka with us.
+              </p>
+              <a href="../folder_2/about.html" class="footerbtn">plan your trip</a>                                                     
+          </div>
+          </div>
+              
+      
+      
+  
+      </div>
+      <div class="contactinfo">
+          <form>
+              <fieldset>
+                  <legend>Contact Us</legend>
+                  <h3>Address</h3>
+                  <p>
+                      212/C,<br>
+                      Mullegama,<br>
+                      Homagama.
+                     
+                  </p>
+                 
+                  <br>
+                  <a href="../folder_3/contact us.html" class="footerbtn">send message</a>
+                  <div class="iconsfooter">
+                    <a href="https://www.facebook.com"><img src="../images/sociel/Facebookbw.png" onmouseover="this.src='../images/sociel/Facebook.png'" onmouseout="this.src='../images/sociel/Facebookbw.png'"></a>
+                    <a href="https://www.instagram.com"><img src="../images/sociel/Instagrambw.png" onmouseover="this.src='../images/sociel/Instagram.png'" onmouseout="this.src='../images/sociel/instagrambw.png'"></a>
+                    <a href="https://www.twitter.com"><img src="../images/sociel/Twitterbw.png" onmouseover="this.src='../images/sociel/Twitter.png'" onmouseout="this.src='../images/sociel/Twitterbw.png'"></a>
+                    <a href="https://www.whatsapp.com"><img src="../images/sociel/WhatsAppbw.png" onmouseover="this.src='../images/sociel/WhatsApp.png'" onmouseout="this.src='../images/sociel/WhatsAppbw.png'"></a>
+                    <a href="https://www.google.com"> <img src="../images/sociel/Googlebw.png" onmouseover="this.src='../images/sociel/Google.png'" onmouseout="this.src='../images/sociel/googlebw.png'"></a>
+                     <a href="https://www.youtube.com"><img src="../images/sociel/Youtubebw.png" onmouseover="this.src='../images/sociel/Youtube.png'" onmouseout="this.src='../images/sociel/Youtubebw.png'"></a>
+                  </div>
+              </fieldset>
+          </form>
+  
+      </div>
+  
+  
+  
+  </fieldset>   
+  </form>
+  </div>
+
+	</body>
+</html>
