@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Tour Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header_style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <style>
+        body {
+            background-color: coral;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .container img {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .footercontainer {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .footerinfo,
+        .contactinfo {
+            flex: 1;
+        }
+
+        .footerbtn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: coral;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .footerbtn:hover {
+            background-color: #ff6347;
+        }
+
+        .iconsfooter img {
+            width: 30px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<!-- Header starts -->
+<div class="header">
+    <div class="logo">
+        <img src="../images/logo.jpg">
+    </div>
+    <div class="socielicons">
+        <a href="https://www.facebook.com"><img src="../images/sociel/Facebookbw.png" onmouseover="this.src='../images/sociel/Facebook.png'" onmouseout="this.src='../images/sociel/Facebookbw.png'"></a>
+        <a href="https://www.instagram.com"><img src="../images/sociel/Instagrambw.png" onmouseover="this.src='../images/sociel/Instagram.png'" onmouseout="this.src='../images/sociel/instagrambw.png'"></a>
+        <a href="https://www.twitter.com"><img src="../images/sociel/Twitterbw.png" onmouseover="this.src='../images/sociel/Twitter.png'" onmouseout="this.src='../images/sociel/Twitterbw.png'"></a>
+        <a href="https://www.whatsapp.com"><img src="../images/sociel/WhatsAppbw.png" onmouseover="this.src='../images/sociel/WhatsApp.png'" onmouseout="this.src='../images/sociel/WhatsAppbw.png'"></a>
+        <a href="https://www.google.com"> <img src="../images/sociel/Googlebw.png" onmouseover="this.src='../images/sociel/Google.png'" onmouseout="this.src='../images/sociel/googlebw.png'"></a>
+        <a href="https://www.youtube.com"><img src="../images/sociel/Youtubebw.png" onmouseover="this.src='../images/sociel/Youtube.png'" onmouseout="this.src='../images/sociel/Youtubebw.png'"></a>
+    </div>
+    <a href="../folder_1/Login.html">
+        <button class="regbtn">
+            <span>Login/register</span>
+        </button>
+    </a>
+</div>
+<!-- Header ends -->
+
+<!-- Navigation bar starts -->
+<div class="nav">
+    <ul>
+        <li>
+            <a href="../folder_2/home.html">Home</a>
+        </li>
+        <li>
+            <a href="../folder_4/popular packages.html">Popular packages</a>
+        </li>
+        <li>
+            <a href="../folder_4/gallery.html">Gallery</a>
+        </li>
+        <li>
+            <a href="../folder_2/about.html">About</a>
+        </li>
+        <li>
+            <a href="../folder_3/contact us.html">Contact Us</a>
+        </li>
+    </ul>
+</div>
+<!-- Navigation bar ends -->
+
+<div class="container">
+    <img src="../images/Sri lanka.jpg" alt="Sri Lanka">
+
+    <h1>Contact Us</h1>
+    <form action="action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <!-- Add more options as needed -->
+        </select><br>
+
+        <label for="cnumber">Contact Number</label>
+        <input type="text" id="cnumber" name="cnumber" placeholder="Your contact number.."><br>
+
+        <input type="submit" value="Submit"><br>
+    </form>
+
+    <div style="background-image: url('../images/visit sri lanka.jpg');">
+        <!-- Background image content -->
+    </div>
+    <div style="background-image: url('../images/tourism.png');">
+        <!-- Background image content -->
+    </div>
+</div>
+
+<!-- Footer starts -->
+<footer>
+    <div class="footercontainer">
+        <div class="footerinfo">
+            <p>
+                Our website is designed to help clients make their dreams come true and plan a well-organized tour in Sri Lanka. Our service offers many travel packages based on your preferences. These plans include various transportation methods, hotel checkouts, and restaurants. We have excellent guides with the highest ratings to make your journey perfect and safe. We assure you will have a great time in Sri Lanka with us.
+            </p>
+            <a href="../folder_2/about.html" class="footerbtn">Plan your trip</a>
+        </div>
+        <div class="contactinfo">
+            <h3>Contact Us</h3>
+            <p>
+                212/C,<br>
+                Mullegama,<br>
+                Homagama.
+            </p>
+            <a href="../folder_3/contact us.html" class="footerbtn">Send message</a>
+            <div class="iconsfooter">
+                <a href="https://www.facebook.com"><img src="../images/sociel/Facebookbw.png" onmouseover="this.src='../images/sociel/Facebook.png'" onmouseout="this.src='../images/sociel/Facebookbw.png'"></a>
+                <a href="https://www.instagram.com"><img src="../images/sociel/Instagrambw.png" onmouseover="this.src='../images/sociel/Instagram.png'" onmouseout="this.src='../images/sociel/instagrambw.png'"></a>
+                <a href="https://www.twitter.com"><img src="../images/sociel/Twitterbw.png" onmouseover="this.src='../images/sociel/Twitter.png'" onmouseout="this.src='../images/sociel/Twitterbw.png'"></a>
+                <a href="https://www.whatsapp.com"><img src="../images/sociel/WhatsAppbw.png" onmouseover="this.src='../images/sociel/WhatsApp.png'" onmouseout="this.src='../images/sociel/WhatsAppbw.png'"></a>
+                <a href="https://www.google.com"> <img src="../images/sociel/Googlebw.png" onmouseover="this.src='../images/sociel/Google.png'" onmouseout="this.src='../images/sociel/googlebw.png'"></a>
+                <a href="https://www.youtube.com"><img src="../images/sociel/Youtubebw.png" onmouseover="this.src='../images/sociel/Youtube.png'" onmouseout="this.src='../images/sociel/Youtubebw.png'"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer ends -->
+</body>
+</html>
